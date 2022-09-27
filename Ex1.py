@@ -12,21 +12,31 @@ Após o utilizador ter inserido os 5 valores apresente:
 ilhas = ['Terceira', 'Graciosa', 'Pico', 'Faial', 'São Jorge']
 
 if __name__ == '__main__':
-    vendas = [0, 0, 0, 0, 0]
-    x = 0
+    vendas = []
     for ilha in ilhas:
-        vendas[x] = (float(input(f'Insira as vendas para {ilha} ')))
-        x += 1
+        vendas.append((int(input(f'Insira as vendas para {ilha} '))))
     print(f'vendas={vendas}')
 
-    x = 0
-    while x < len(ilhas):
-        vendas.append(float(input(f'Insira as vendas para {ilhas[x]} ')))
-        x += 1
-    print(f'vendas={vendas}')
+    menor = vendas[0]
+    maior = vendas[0]
+    for x in range(1, len(vendas)):
+        if vendas[x] < menor:
+            menor = vendas[x]
+        if vendas[x] > maior:
+            maior = vendas[x]
+    print(f'O maior é {maior} e o menor é {menor}.')
+    print(f'O maior é {max(vendas)} e o menor é {min(vendas)}.')
+    print(f'O maior é {sorted(vendas)[4]} e o menor é {sorted(vendas)[0]}.')
+
+    total = 0
+    for v in vendas:
+        total += v
+
+    media = total / len(vendas)
+
+    print(f'O total é {total} e a média é {media}.')
 
 
-    print(f'vendas={vendas}')
 
 """
     continuar = 's'
