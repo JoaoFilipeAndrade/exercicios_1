@@ -8,6 +8,7 @@ Após o utilizador ter inserido os 5 valores apresente:
 - O maior valor inserido
 - A média das vendas
 """
+from builtins import sum
 
 ilhas = ['Terceira', 'Graciosa', 'Pico', 'Faial', 'São Jorge']
 
@@ -34,7 +35,8 @@ if __name__ == '__main__':
 
     media = total / len(vendas)
 
-    print(f'O total é {total} e a média é {media}.')
+
+    print(f'O total é {sum(vendas)} e a média é {media}.')
 
 
 
