@@ -27,5 +27,4 @@ Exemplo da estrutura de armazenamento das vendas:
     ]
 
 
-
 """
