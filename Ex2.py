@@ -57,17 +57,25 @@ if __name__ == '__main__':
     print(f'v2Tem {osnums} numeros')
 
 
-    letras = len(frase)
     invertido = []
-
-
     for c in frase:
         invertido.append(c)
-        
-    print(f"Frase invertida: {' '.join(invertido)}")
+
+    nova = invertido
+
+    qtd = len(invertido) - 1
+
+    for c in frase:
+        nova[qtd] = c
+        qtd -= 1
+
+    print(f'nova = {nova}')
+    print(f"nova = {''.join(nova)}")
 
 
 
+    print(f'frase = {frase}')
+    print(f'invertido = {invertido}')
 
 
 
