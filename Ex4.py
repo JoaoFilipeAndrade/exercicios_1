@@ -8,3 +8,5 @@ Após o utilizador ter inserido os 5 valores apresente:
 - O maior valor inserido assim como as respetivas ilhas
 - A média das vendas
 """
+
+print(chr(ord('A') + 32))
