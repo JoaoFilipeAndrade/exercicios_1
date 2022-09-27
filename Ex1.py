@@ -35,21 +35,4 @@ if __name__ == '__main__':
 
     media = total / len(vendas)
 
-
     print(f'O total é {sum(vendas)} e a média é {media}.')
-
-
-
-"""
-    continuar = 's'
-    while continuar == 's':
-        ini = int(input('Insira o número inicial '))
-        fim = int(input('Insira o número final '))
-        primos = 0
-        for n in range(ini, fim + 1):
-            if divisores(n) == 2:
-                primos += 1
-        print(f'Entre {ini} e {fim} há {primos} de primos.')
-        continuar = input('Repetir [s | n]? ')
-    print(f'Adeus!')
-"""
