@@ -10,6 +10,14 @@ Mostre todos os números que satisfazem o pedido do utilizador
 import random
 
 
+def divisores(num):
+    zeros = 0
+    for nn in range(1, num + 1):
+        if num % nn == 0:
+            zeros += 1  # zeros = zeros + 1
+    return zeros
+
+
 def get_random(ini, fim):
     """
     Esta função devolve um número aleatório entre ini e fim inclusive
@@ -39,4 +47,15 @@ if __name__ == '__main__':
         except:
             print('Insere valores válidos')
 
-
+    for num in range(quantos):
+        numero = get_random(ini, fim)
+        print(numero)
+        if numero % 2 == 0:
+            out1 = f'O numero {numero} é par'
+        else:
+            out1 = f'O numero {numero} é impar'
+        if divisores(numero)  == 2:
+            out2 = 'e primo'
+        else:
+            out2 = ''
+        print(f'{out1} {out2}')
