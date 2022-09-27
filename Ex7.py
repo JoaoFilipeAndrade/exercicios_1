@@ -18,7 +18,7 @@ Exemplo da estrutura de armazenamento das vendas:
 
     vendas = [
          Gasoleo
-             Gasolina
+          |  Gasolina
         [10, 15], TER
         [20, 25], PIC
         [30, 35], FAI
